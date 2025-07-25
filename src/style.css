@@ -1,34 +1,19 @@
-
-@tailwind utilities;
 @import "tailwindcss";
-@theme{
-  --color-accent:#9A298D;
-  --color-secondary:#9B7D98;
-  --color-purple1:#D7A2D0;
-  --color-purple2:#DDB1D8;
-  --color-purple3:#A48AA1;
-  --color-purple4:#D7A2D1;
-  --color-purple5:#F3CEEE;
-  --color-gray1:#D9D9D9;
-  --color-gray2:#FFF8FE;
-  --color-gray3:#FFF5FE;
-  --color-black1:#1E1E1E;
-  --color-black2:#242424;
+@ theme {
+ --color-accent:#BEE532;
+ --color-Lime-gray:#5D6150;
+ --color-gray:#4F4F4F;
+ --color-white: #DFDFDF;
 }
 @layer components{
-  .description{
-    @apply flex flex-col space-y-4 mt-5;
-  }
-  .desc-circle{
-    @apply flex items-center space-x-2;
-  }
-  .circle{
-@apply w-4 h-4 rounded-full;
-  }
-  .desc{
-    @apply text-secondary text-xs font-semibold
+.urbanist {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
   }
 }
-body{
-  font-family:Arial, Helvetica, sans-serif;
-}
+/* @layer utilities{
+.bg-logo{
+    background-image:url('/images/logo.png') ;
+  }
+} */
